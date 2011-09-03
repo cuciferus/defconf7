@@ -1,0 +1,6 @@
+<% @pacient.evaluares.each do |evaluare| %>
+  <div>
+    <h3> salut</h3>
+    <%= evaluare.data %>
+</div>
+<% end %>

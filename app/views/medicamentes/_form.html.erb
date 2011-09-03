@@ -1,0 +1,17 @@
+<%= simple_form_for(@medicamente) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :clasa %>
+    <%= f.input :dci %>
+    <%= f.input :nume %>
+    <%= f.input :doza %>
+    <%= f.input :diagnostic %>
+    <%= f.input :compensare %>
+    <%= f.input :interval %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

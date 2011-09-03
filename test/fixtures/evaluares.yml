@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  data: 2011-08-13
+  diagnostice: MyText
+  uree: 1.5
+  creatinina: 1.5
+  tgo: 1.5
+  tgp: 1.5
+  fosfataza_alcalina: 1.5
+  calciu: 1.5
+  fosfor: 1.5
+  albumina: 1.5
+  leucocite_sange: 1.5
+  hemoglobina: 1.5
+  hematocrit: 1.5
+  plachete: 1.5
+  glicemie: 1.5
+  sodiu: 1.5
+  potasiu: 1.5
+  gucoza_urina: 1
+  proteina_urina: 1
+  leucocite_urina: 1
+  nitriti: 
+  germeni: MyString
+  raport_a_c: 1.5
+  microalb: 1.5
+  bicarb: 1.5
+  colesterol: 1.5
+  trigliceride: 1.5
+  pacient: 
+
+two:
+  data: 2011-08-13
+  diagnostice: MyText
+  uree: 1.5
+  creatinina: 1.5
+  tgo: 1.5
+  tgp: 1.5
+  fosfataza_alcalina: 1.5
+  calciu: 1.5
+  fosfor: 1.5
+  albumina: 1.5
+  leucocite_sange: 1.5
+  hemoglobina: 1.5
+  hematocrit: 1.5
+  plachete: 1.5
+  glicemie: 1.5
+  sodiu: 1.5
+  potasiu: 1.5
+  gucoza_urina: 1
+  proteina_urina: 1
+  leucocite_urina: 1
+  nitriti: 
+  germeni: MyString
+  raport_a_c: 1.5
+  microalb: 1.5
+  bicarb: 1.5
+  colesterol: 1.5
+  trigliceride: 1.5
+  pacient: 

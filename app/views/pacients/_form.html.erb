@@ -1,0 +1,17 @@
+<%= simple_form_for(@pacient) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :nume %>
+    <%= f.input :prenume %>
+    <%= f.input :cnp %>
+    <%= f.input :debut_diabet %>
+    <%= f.input :focad %>
+    <%= f.input :adresa %>
+    <%= f.input :tel %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nume: MyString
+  prenume: MyString
+  cnp: 1
+  debut_diabet: 2011-08-13
+  focad: MyString
+  adresa: MyText
+  tel: 1
+
+two:
+  nume: MyString
+  prenume: MyString
+  cnp: 1
+  debut_diabet: 2011-08-13
+  focad: MyString
+  adresa: MyText
+  tel: 1

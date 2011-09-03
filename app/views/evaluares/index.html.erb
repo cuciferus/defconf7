@@ -1,0 +1,77 @@
+<h1>Listing evaluares</h1>
+
+<table>
+  <tr>
+    <th>Data</th>
+    <th>Diagnostice</th>
+    <th>Uree</th>
+    <th>Creatinina</th>
+    <th>Tgo</th>
+    <th>Tgp</th>
+    <th>Fosfataza alcalina</th>
+    <th>Calciu</th>
+    <th>Fosfor</th>
+    <th>Albumina</th>
+    <th>Leucocite sange</th>
+    <th>Hemoglobina</th>
+    <th>Hematocrit</th>
+    <th>Plachete</th>
+    <th>Glicemie</th>
+    <th>Sodiu</th>
+    <th>Potasiu</th>
+    <th>Gucoza urina</th>
+    <th>Proteina urina</th>
+    <th>Leucocite urina</th>
+    <th>Nitriti</th>
+    <th>Germeni</th>
+    <th>Raport a c</th>
+    <th>Microalb</th>
+    <th>Bicarb</th>
+    <th>Colesterol</th>
+    <th>Trigliceride</th>
+    <th>Pacient</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @evaluares.each do |evaluare| %>
+  <tr>
+    <td><%= evaluare.data %></td>
+    <td><%= evaluare.diagnostice %></td>
+    <td><%= evaluare.uree %></td>
+    <td><%= evaluare.creatinina %></td>
+    <td><%= evaluare.tgo %></td>
+    <td><%= evaluare.tgp %></td>
+    <td><%= evaluare.fosfataza_alcalina %></td>
+    <td><%= evaluare.calciu %></td>
+    <td><%= evaluare.fosfor %></td>
+    <td><%= evaluare.albumina %></td>
+    <td><%= evaluare.leucocite_sange %></td>
+    <td><%= evaluare.hemoglobina %></td>
+    <td><%= evaluare.hematocrit %></td>
+    <td><%= evaluare.plachete %></td>
+    <td><%= evaluare.glicemie %></td>
+    <td><%= evaluare.sodiu %></td>
+    <td><%= evaluare.potasiu %></td>
+    <td><%= evaluare.gucoza_urina %></td>
+    <td><%= evaluare.proteina_urina %></td>
+    <td><%= evaluare.leucocite_urina %></td>
+    <td><%= evaluare.nitriti %></td>
+    <td><%= evaluare.germeni %></td>
+    <td><%= evaluare.raport_a_c %></td>
+    <td><%= evaluare.microalb %></td>
+    <td><%= evaluare.bicarb %></td>
+    <td><%= evaluare.colesterol %></td>
+    <td><%= evaluare.trigliceride %></td>
+    <td><%= evaluare.pacient %></td>
+    <td><%= link_to 'Show', evaluare %></td>
+    <td><%= link_to 'Edit', edit_evaluare_path(evaluare) %></td>
+    <td><%= link_to 'Destroy', evaluare, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Evaluare', new_evaluare_path %>

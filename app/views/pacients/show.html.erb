@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+<h2> Detalii pentru <%= @pacient.nume.capitalize %> <%= @pacient.prenume.capitalize %> </h2>
+<p>
+  <b>Cnp:</b>
+  <%= @pacient.cnp %>
+</p>
+
+<p>
+  <b>Debut diabet:</b>
+  <%= @pacient.debut_diabet %>
+</p>
+
+<p>
+  <b>Focad:</b>
+  <%= @pacient.focad %>
+</p>
+
+<p>
+  <b>Adresa:</b>
+  <%= @pacient.adresa %>
+</p>
+
+<p>
+  <b>Tel:</b>
+  <%= @pacient.tel %>
+</p>
+<%= render :partial => 'reteta/index' %>
+<%= render :partial => 'evaluares/index',  :remote => true %>
+<%= link_to 'Adauga Evaluare', new_pacient_evaluare_url(@pacient) %> |
+<%= link_to 'Edit', edit_pacient_path(@pacient) %> |
+<%= link_to 'Back', pacients_path %>

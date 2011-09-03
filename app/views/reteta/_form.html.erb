@@ -1,0 +1,17 @@
+<%= simple_form_for([@pacient, @retetum]) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :data %>
+    <%= f.input :cantitate %>
+    <%= f.input :serie %>
+    <%= f.input :medicamente_id do %>
+      <%=  select(:retetum, :medicamente_id, Medicamente.clase) %>
+    <% end %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+    <%= link_to 'Tipareste reteta', new_pacient_retetum_path(@pacient, :format=> 'pdf') %>
+  </div>
+<% end %>

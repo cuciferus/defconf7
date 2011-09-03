@@ -1,0 +1,94 @@
+<h1>Listing evaluares</h1>
+
+<table>
+  <tr><th></th><th><% @pacient.evaluares.each do |evaluare| %>
+        Editeaza<br/><%=link_to 'Printeaza', pacient_evaluare_path(@pacient, evaluare.id, :format => 'pdf') %><br/><th>
+        <% end %><tr>
+  <tr><th>Data</th> <% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.data %> </td>
+    <% end %> </tr>
+  <tr><th>Diagnostice</th></tr>
+  <tr><th>Uree</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.uree %> </td>
+    <% end %> </tr>
+
+  <tr><th>Creatinina</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.creatinina %> </td>
+    <% end %> </tr>
+
+  <th>Tgo</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.tgo %> </td>
+    <% end %> </tr>
+  <th>Tgp</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.tgp %> </td>
+    <% end %> </tr>
+  <tr><th>Fosfataza alcalina</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.fosfataza_alcalina %> </td>
+    <% end %> </tr>
+  <tr><th>Calciu</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.calciu %> </td>
+    <% end %> </tr>
+  <tr><th>Fosfor</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.fosfor %> </td>
+    <% end %> </tr>
+  <tr><th>Albumina</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.albumina %> </td>
+    <% end %> </tr>
+  <tr><th>Leucocite sange</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.leucocite_sange %> </td>
+    <% end %> </tr>
+  <tr><th>Hemoglobina</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.hemoglobina %> </td>
+    <% end %> </tr>
+  <tr><th>Hematocrit</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.hematocrit %> </td>
+    <% end %> </tr>
+  <tr><th>Plachete</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.plachete %> </td>
+    <% end %> </tr>
+  <tr><th>Glicemie</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.glicemie %> </td>
+    <% end %> </tr>
+  <tr><th>Sodiu</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.sodiu %> </td>
+    <% end %> </tr>
+  <tr><th>Potasiu</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.potasiu %> </td>
+    <% end %> </tr>
+  <tr><th>Gucoza urina</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.gucoza_urina %> </td>
+    <% end %> </tr>
+  <tr><th>Proteina urina</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.proteina_urina %> </td>
+    <% end %> </tr>
+  <tr><th>Leucocite urina</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.leucocite_urina %> </td>
+    <% end %> </tr>
+  <tr><th>Nitriti</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.nitriti %> </td>
+    <% end %> </tr>
+  <tr><th>Germeni</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.germeni %> </td>
+    <% end %> </tr>
+  <tr><th>Raport a c</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.raport_a_c %> </td>
+    <% end %> </tr>
+  <tr><th>Microalb</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.microalb %> </td>
+    <% end %> </tr>
+  <tr><th>Bicarbonat</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.bicarb %> </td>
+    <% end %> </tr>
+  <tr><th>Colesterol</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.colesterol %> </td>
+    <% end %> </tr>
+  <tr><th>Trigliceride</th><% @pacient.evaluares.each do |evaluare| %>
+      <td><%= evaluare.trigliceride %> </td>
+    <% end %> </tr>
+  <th></th>
+  <th></th>
+  <th></th>
+  </tr>
+<br />
+
+</table>

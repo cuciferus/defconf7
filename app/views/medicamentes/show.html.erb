@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Clasa:</b>
+  <%= @medicamente.clasa %>
+</p>
+
+<p>
+  <b>Nume:</b>
+  <%= @medicamente.nume %>
+</p>
+
+<p>
+  <b>Interval:</b>
+  <%= @medicamente.interval %>
+</p>
+
+
+<%= link_to 'Edit', edit_medicamente_path(@medicamente) %> |
+<%= link_to 'Back', medicamentes_path %>

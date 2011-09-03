@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nume:</b>
+  <%= @alte_analize.nume %>
+</p>
+
+<p>
+  <b>Valuare:</b>
+  <%= @alte_analize.valuare %>
+</p>
+
+<p>
+  <b>Unitate masura:</b>
+  <%= @alte_analize.unitate_masura %>
+</p>
+
+<p>
+  <b>Evaluare:</b>
+  <%= @alte_analize.evaluare %>
+</p>
+
+
+<%= link_to 'Edit', edit_alte_analize_path(@alte_analize) %> |
+<%= link_to 'Back', alte_analizes_path %>

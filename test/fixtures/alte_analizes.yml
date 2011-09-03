@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nume: MyString
+  valuare: 1.5
+  unitate_masura: MyString
+  evaluare: 
+
+two:
+  nume: MyString
+  valuare: 1.5
+  unitate_masura: MyString
+  evaluare: 

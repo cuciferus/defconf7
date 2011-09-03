@@ -1,0 +1,29 @@
+<h1>Listing alte_analizes</h1>
+
+<table>
+  <tr>
+    <th>Nume</th>
+    <th>Valuare</th>
+    <th>Unitate masura</th>
+    <th>Evaluare</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @alte_analizes.each do |alte_analize| %>
+  <tr>
+    <td><%= alte_analize.nume %></td>
+    <td><%= alte_analize.valuare %></td>
+    <td><%= alte_analize.unitate_masura %></td>
+    <td><%= alte_analize.evaluare %></td>
+    <td><%= link_to 'Show', alte_analize %></td>
+    <td><%= link_to 'Edit', edit_alte_analize_path(alte_analize) %></td>
+    <td><%= link_to 'Destroy', alte_analize, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Alte analize', new_alte_analize_path %>

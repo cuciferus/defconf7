@@ -1,0 +1,48 @@
+<%= simple_form_for ([@pacient, @evaluare]), :html => {:multipart => true} do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :data %>
+    <%= f.input :diagnostice %>
+    <%= f.input :uree %>
+    <%= f.input :creatinina %>
+    <%= f.input :tgo %>
+    <%= f.input :tgp %>
+    <%= f.input :fosfataza_alcalina %>
+    <%= f.input :calciu %>
+    <%= f.input :fosfor %>
+    <%= f.input :albumina %>
+    <%= f.input :leucocite_sange %>
+    <%= f.input :hemoglobina %>
+    <%= f.input :hematocrit %>
+    <%= f.input :plachete %>
+    <%= f.input :glicemie %>
+    <%= f.input :sodiu %>
+    <%= f.input :potasiu %>
+    <%= f.input :gucoza_urina %>
+    <%= f.input :proteina_urina %>
+    <%= f.input :leucocite_urina %>
+    <%= f.input :nitriti %>
+    <%= f.input :germeni %>
+    <%= f.input :raport_a_c %>
+    <%= f.input :microalb %>
+    <%= f.input :bicarb %>
+    <%= f.input :colesterol %>
+    <%= f.input :trigliceride %>
+  </div>
+  <div class="inputs2">
+    <h2> salut</h2>
+    <%# render "alte_analizes/form" %>
+    <%= f.simple_fields_for :alte_analizes, @evaluare.alte_analizes do |g| %>
+      <h3> ceva</h3>
+      <%= g.input :nume %>
+      <%= g.input :valuare %>
+      <%= g.input :unitate_masura %>
+      <%= g.button :submit %>
+    <% end %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

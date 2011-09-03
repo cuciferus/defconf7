@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  clasa: MyString
+  nume: MyString
+  interval: 1
+
+two:
+  clasa: MyString
+  nume: MyString
+  interval: 1

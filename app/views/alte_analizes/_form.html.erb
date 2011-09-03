@@ -1,0 +1,14 @@
+<%= simple_form_for([@valuare, @alte_analize]) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :nume %>
+    <%= f.input :valuare %>
+    <%= f.input :unitate_masura %>
+    <%# f.association :evaluare %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  data: 2011-08-23
+  cantitate: 1
+  serie: 1
+  pacient: 
+  medicamente: 
+
+two:
+  data: 2011-08-23
+  cantitate: 1
+  serie: 1
+  pacient: 
+  medicamente: 
