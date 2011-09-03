@@ -6,10 +6,11 @@
     <%= f.input :cantitate %>
     <%= f.input :serie %>
     <%= f.input :medicamente_id do %>
-      <%=  select(:retetum, :medicamente_id, Medicamente.clase) %>
+      <%#  select(:retetum, :medicamente_id, Medicamente.pastile) %>
+      <%= select(:retetum, :medicamente_id, Medicamente.all.collect {|p| [p.nume, p.id]})%>
     <% end %>
   </div>
-
+  <br />
   <div class="actions">
     <%= f.button :submit %>
     <%= link_to 'Tipareste reteta', new_pacient_retetum_path(@pacient, :format=> 'pdf') %>

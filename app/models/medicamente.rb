@@ -16,6 +16,9 @@ class Medicamente < ActiveRecord::Base
   def self.clase
     Medicamente.select("DISTINCT(clasa)").map(&:clasa)
   end
+  def self.pastile
+    Medicamente.select("DISTINCT(nume)").map(&:nume)
+  end
   def self.din_clasa(clasa)
     #nu returneaza idu de medicamente nici o metoda, de rezolvat
     h=[]
