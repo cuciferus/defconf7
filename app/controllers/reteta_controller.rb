@@ -22,6 +22,14 @@ class RetetaController < InheritedResources::Base
       end
     end
   end
+  def update_pastile
+    #update de pastile in functie de ce clasa selecteaza
+    clasa = Medicamente.find(params[:medicamente_id])
+    medicamente = Medicamente.where(:clasa => clasa)
+    render :update do |page|
+      page.replace_html 'pastile', :partial => 'pastile', :object => medicamente
+    end
+  end
 
 
 

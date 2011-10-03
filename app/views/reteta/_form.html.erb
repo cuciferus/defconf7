@@ -7,9 +7,10 @@
     <%= f.input :serie %>
     <%= f.input :medicamente_id do %>
       <%#  select(:retetum, :medicamente_id, Medicamente.pastile) %>
-      <%= select(:retetum, :medicamente_id, Medicamente.all.collect {|p| [p.nume, p.id]})%>
+      <%= select(:retetum, :medicamente_id, Medicamente.clase) %>
     <% end %>
   </div>
+  <div class="pastile"><%= render 'pastile', :collection => @retetum.pastile %></div>
   <br />
   <div class="actions">
     <%= f.button :submit %>
