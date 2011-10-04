@@ -1,4 +1,7 @@
-<%= simple_form_for([@pacient, @retetum]) do |f| %>
+<div id="medicamente_prescrise">
+  <%= render @prescrise %>
+</div>
+<%= simple_form_for [@pacient, @retetum] , :remote => true do |f| %>
   <%= f.error_notification %>
 
   <div class="inputs">
@@ -6,13 +9,13 @@
     <%= f.input :cantitate %>
     <%= f.input :serie %>
     <%= f.input :medicamente_id do %>
-      <%#  select(:retetum, :medicamente_id, Medicamente.pastile) %>
       <%= select(:retetum, :medicamente_id, Medicamente.clase) %>
     <% end %>
   </div>
   <div class="pastile"><%= render 'pastile', :collection => @retetum.pastile %></div>
   <br />
   <div class="actions">
+    <%= link_to 'Adauga medicamentu la reteta' %><br />
     <%= f.button :submit %>
     <%= link_to 'Tipareste reteta', new_pacient_retetum_path(@pacient, :format=> 'pdf') %>
   </div>
