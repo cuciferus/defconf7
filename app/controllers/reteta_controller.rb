@@ -2,10 +2,7 @@ class RetetaController < InheritedResources::Base
   respond_to :html, :js
   belongs_to :pacient
   #o reteta trebuie sa aibe mai multe medicamente
-  def index
-    @pacient = Pacient.find(params[:pacient_id])
-    @retetum = pacient.reteta.all
-  end
+
   def show
     @pacient = Pacient.find(params[:pacient_id])
     @retetum = Retetum.find(params[:id])
@@ -38,7 +35,6 @@ class RetetaController < InheritedResources::Base
   def medicamente
     @pacient = Pacient.find(params[:pacient_id])
     @retetum = Retetum.find(params[:id])
-    medicamente = @retetum.medicamente_id
   end
   def update_pastile
     #update de pastile in functie de ce clasa selecteaza
